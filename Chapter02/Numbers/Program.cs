@@ -13,6 +13,10 @@ namespace Numbers
             // integer means negative or positive whole number
             // including 0
             int integerNumber = -23;
+
+            // float means single-precision floating point
+            // F suffix makes it a float literal
+            float realNumber = 2.3f;
         }
     }
 }
