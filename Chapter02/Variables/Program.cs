@@ -32,6 +32,7 @@ namespace Variables
             var happy = true; // Booleans have value of true or false
 
             Console.WriteLine($"default(int) = {default(int)}");
+            Console.WriteLine($"default(bool) = {default(bool)}");
         }
     }
 }
