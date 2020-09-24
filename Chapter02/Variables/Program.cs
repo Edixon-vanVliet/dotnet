@@ -30,6 +30,8 @@ namespace Variables
             var fruit = "Apples"; // strings use double-quotes
             var letter = 'Z'; // chars use single-quotes
             var happy = true; // Booleans have value of true or false
+
+            Console.WriteLine($"default(int) = {default(int)}");
         }
     }
 }
