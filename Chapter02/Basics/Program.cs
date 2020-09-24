@@ -8,6 +8,11 @@ namespace Basics
     {
         static void Main(string[] args)
         {
+            // declare some unused variables using types
+            // in additional assemblies
+            System.Data.DataSet dataSet;
+            System.Net.Http.HttpClient client;
+
             // loop through the assemblies that this app references
             foreach (var r in Assembly.GetEntryAssembly().GetReferencedAssemblies())
             {
