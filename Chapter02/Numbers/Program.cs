@@ -30,6 +30,8 @@ namespace Numbers
             // both statements output true
             Console.WriteLine($"{decimalNotation == binaryNotation}");
             Console.WriteLine($"{decimalNotation == hexadecimalNotation}");
+
+            Console.WriteLine($"int uses {sizeof(int)} bytes and can store numbers int the range {int.MinValue:N0} to {int.MaxValue:N0}.");
         }
     }
 }
