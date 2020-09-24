@@ -6,7 +6,9 @@ namespace Numbers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // unsigend integer means positive whole number
+            // including 0
+            uint naturalNumber = 23;
         }
     }
 }
