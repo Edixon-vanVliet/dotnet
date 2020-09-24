@@ -22,6 +22,8 @@ namespace Formatting
             );
 
             // WriteToFile(formatted); // writes the string into a file
+
+            Console.WriteLine($"{numberOfApples} apples costs {pricePerApple * numberOfApples:C}");
         }
     }
 }
