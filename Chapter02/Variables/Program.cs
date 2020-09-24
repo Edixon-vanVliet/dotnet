@@ -23,6 +23,13 @@ namespace Variables
             // if you later store a data type that does not have a 
             // property named Length
             int length = anotherName.Length;
+
+            int population = 66_000_000; // 66 million in UK
+            double weight = 1.88; // in kilograms
+            decimal price = 4.99M; // in pounds sterling
+            string fruit = "Apples"; // strings use double-quotes
+            char letter = 'Z'; // chars use single-quotes
+            bool happy = true; // Booleans have value of true or false
         }
     }
 }
