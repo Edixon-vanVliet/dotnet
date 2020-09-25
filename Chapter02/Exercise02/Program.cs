@@ -14,7 +14,7 @@ namespace Exercise02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string line = new String('-', 72);
         }
     }
 }
