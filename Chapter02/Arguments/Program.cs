@@ -21,6 +21,12 @@ namespace Arguments
 
                 return;
             }
+
+            ForegroundColor = (ConsoleColor)Enum.Parse(
+                enumType: typeof(ConsoleColor),
+                value: args[0],
+                ignoreCase: true
+            );
         }
     }
 }
