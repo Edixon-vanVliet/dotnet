@@ -27,5 +27,16 @@ namespace Exercise02
             );
             WriteLine(line);
         }
+        
+        static string FormatString(string name, int bytes, object minValue, object MaxValue)
+        {
+            return String.Format(
+                format: "{0,-7} {1,-2} {2,30} {3,30}",
+                name,
+                bytes,
+                minValue,
+                MaxValue
+            );
+        }
     }
 }
