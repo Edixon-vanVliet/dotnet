@@ -15,6 +15,17 @@ namespace Exercise02
         static void Main(string[] args)
         {
             string line = new String('-', 72);
+
+            // header
+            WriteLine(line);
+            WriteLine(
+                format: "{0,-7} {1,-2} {2,15} {3,30}",
+                "Type",
+                "Byte(s) of memory",
+                "Min",
+                "Max"
+            );
+            WriteLine(line);
         }
     }
 }
