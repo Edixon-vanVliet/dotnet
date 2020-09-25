@@ -13,6 +13,14 @@ namespace Arguments
             {
                 WriteLine(arg);
             }
+
+            if (args.Length < 4)
+            {
+                WriteLine("You must specify two colors and dimensions, eg.");
+                WriteLine("dotnet run red yellow 80 40");
+
+                return;
+            }
         }
     }
 }
