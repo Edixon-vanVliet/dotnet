@@ -42,8 +42,26 @@ namespace Exercise02
                 "Max"
             );
             WriteLine(line);
+
+            foreach (var numberType in numberTypes)
+            {
+                // gets a Type object that represents the specified type
+                Type type = Type.GetType(numberType.Value);
+
+                // returns the size of an unmanaged type in bytes
+                int size = System.Runtime.InteropServices.Marshal.SizeOf(type);
+
+                WriteLine(FormatString(
+                    numberType.Key,
+                    size,
+                    // GetField: gets a specific field of the current Type
+                    // GetValue: returns the value of a field supported by a given object
+                    type.GetField("MinValue").GetValue(type.GetType()),
+                    type.GetField("MaxValue").GetValue(type.GetType())
+                ));
+            }
         }
-        
+
         static string FormatString(string name, int bytes, object minValue, object MaxValue)
         {
             return String.Format(
