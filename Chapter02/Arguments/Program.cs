@@ -7,7 +7,7 @@ namespace Arguments
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine($"There are {args.Length} arguments.");
         }
     }
 }
