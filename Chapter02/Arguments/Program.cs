@@ -33,6 +33,8 @@ namespace Arguments
                 value: args[1],
                 ignoreCase: true
             );
+
+            WindowWidth = int.Parse(args[2]);
         }
     }
 }
