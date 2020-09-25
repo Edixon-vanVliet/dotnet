@@ -35,6 +35,7 @@ namespace Arguments
             );
 
             WindowWidth = int.Parse(args[2]);
+            WindowHeight = int.Parse(args[3]);
         }
     }
 }
