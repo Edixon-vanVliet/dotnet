@@ -47,6 +47,14 @@ namespace Formatting
                 arg0: bananasText,
                 arg1: bananasCount
             );
+
+            Console.Write("Type your first name and press ENTER: ");
+            string firstName = Console.ReadLine();
+
+            Console.Write("Type you age and press ENTER: ");
+            string age = Console.ReadLine();
+
+            Console.WriteLine($"Hello {firstName}, you look good for {age}.");
         }
     }
 }
