@@ -7,7 +7,10 @@ namespace Operators
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int a = 3;
+            int b = a++;
+
+            WriteLine($"a is {a}, b is {b}");
         }
     }
 }
