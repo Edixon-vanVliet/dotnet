@@ -25,5 +25,12 @@ namespace BooleanOperators
             WriteLine($"b    | {b ^ a,-5} | {b ^ b,-5} ");
             WriteLine();
         }
+
+        private static bool DoStuff()
+        {
+            WriteLine("I am doing stuff.");
+
+            return true;
+        }
     }
 }
