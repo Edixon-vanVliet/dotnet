@@ -25,8 +25,8 @@ namespace BooleanOperators
             WriteLine($"b    | {b ^ a,-5} | {b ^ b,-5} ");
             WriteLine();
 
-            WriteLine($"a & DoStuff() = {a & DoStuff()}");
-            WriteLine($"b & DoStuff() = {b & DoStuff()}");
+            WriteLine($"a && DoStuff() = {a && DoStuff()}");
+            WriteLine($"b && DoStuff() = {b && DoStuff()}");
         }
 
         private static bool DoStuff()
