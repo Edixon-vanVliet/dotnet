@@ -26,6 +26,11 @@ namespace Operators
             WriteLine($"e * f = {e * f}");
             WriteLine($"e / f = {e / f}");
             WriteLine($"e % f = {e % f}");
+
+            double g = 11.0;
+
+            WriteLine($"g is {g:n1}, f is {f}");
+            WriteLine($"g / f = {g / f}");
         }
     }
 }
