@@ -11,6 +11,11 @@ namespace Operators
             int b = a++;
 
             WriteLine($"a is {a}, b is {b}");
+
+            int c = 3;
+            int d = ++c; // increment c before assigning it
+
+            WriteLine($"c is {c}, d is {d}");
         }
     }
 }
