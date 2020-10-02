@@ -16,6 +16,9 @@ namespace BitwiseAndShiftOperators
             WriteLine($"a & b = {a & b}"); // 2-bit column only
             WriteLine($"a | b = {a | b}"); // 8, 4 and 2-bit columns
             WriteLine($"a ^ b = {a ^ b}"); // 8 and 4-bit columns
+
+            // 0101 0000 left-shift a by three bit columns
+            WriteLine($"a << 3 = {a << 3}");
         }
     }
 }
