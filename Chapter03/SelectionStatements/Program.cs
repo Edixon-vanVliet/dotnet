@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace SelectionStatements
 {
@@ -6,7 +7,14 @@ namespace SelectionStatements
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if (args.Length == 0)
+            {
+                WriteLine("There are no arguments.");
+            }
+            else
+            {
+                WriteLine("There is at least one argument.");
+            }
         }
     }
 }
