@@ -24,6 +24,10 @@ namespace Exercise03
                 {
                     Write($"fizz, ");
                 }
+                else if (i % 5 == 0)
+                {
+                    Write($"buzz, ");
+                }
 
                 Write($"{i}, ");
             }
