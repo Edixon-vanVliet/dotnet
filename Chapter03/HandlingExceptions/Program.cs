@@ -18,6 +18,10 @@ namespace HandlingExceptions
 
                 WriteLine($"You are {age} years old.");
             }
+            catch (FormatException)
+            {
+                WriteLine("The age you entered is not a valid number format.");
+            }
             catch (Exception ex)
             {
                 WriteLine($"{ex.GetType()} says {ex.Message}");
