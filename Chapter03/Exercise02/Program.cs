@@ -22,6 +22,10 @@ namespace Exercise02
                     }
                 }
             }
+            catch (OverflowException)
+            {
+                WriteLine($"Byte i overflowed");
+            }
             catch (Exception ex)
             {
                 WriteLine($"{ex.GetType()} says {ex.Message}");
