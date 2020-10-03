@@ -39,6 +39,15 @@ namespace CastingConverting
             {
                 WriteLine($"ToInt({n}) is {ToInt32(n)}");
             }
+
+            foreach (double n in doubles)
+            {
+                WriteLine(
+                    format: "Math.Round({0}, 0, MidPointRounding.AwayFromZero is {1}",
+                    n,
+                    Math.Round(n, 0, MidpointRounding.AwayFromZero)
+                );
+            }
         }
     }
 }
