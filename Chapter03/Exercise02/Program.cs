@@ -11,11 +11,16 @@ namespace Exercise02
     {
         static void Main(string[] args)
         {
-            int max = 500;
-            for (byte i = 0; i < max; i++)
+            try
             {
-                WriteLine(i);
+                int max = 500;
+                for (byte i = 0; i < max; i++)
+                {
+                    WriteLine(i);
+                }
             }
+            catch
+            { }
         }
     }
 }
