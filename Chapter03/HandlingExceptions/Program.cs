@@ -18,8 +18,9 @@ namespace HandlingExceptions
 
                 WriteLine($"You are {age} years old.");
             }
-            catch
+            catch (Exception ex)
             {
+                WriteLine($"{ex.GetType()} says {ex.Message}");
             }
 
             WriteLine("After parsing");
