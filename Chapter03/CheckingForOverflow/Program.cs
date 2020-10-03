@@ -28,6 +28,21 @@ namespace CheckingForOverflow
             {
                 WriteLine("The code overflowed but I caught the exception.");
             }
+
+            unchecked
+            {
+                int y = int.MaxValue + 1;
+                WriteLine($"Initial value: {y}");
+
+                y--;
+                WriteLine($"After incrementing: {y}");
+
+                y--;
+                WriteLine($"After incrementing: {y}");
+
+                y--;
+                WriteLine($"After incrementing: {y}");
+            }
         }
     }
 }
