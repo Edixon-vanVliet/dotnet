@@ -28,8 +28,10 @@ namespace Exercise03
                 {
                     Write($"buzz, ");
                 }
-
-                Write($"{i}, ");
+                else
+                {
+                    Write($"{i}, ");
+                }
             }
         }
     }
