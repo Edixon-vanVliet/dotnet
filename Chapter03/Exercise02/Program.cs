@@ -13,10 +13,13 @@ namespace Exercise02
         {
             try
             {
-                int max = 500;
-                for (byte i = 0; i < max; i++)
+                checked
                 {
-                    WriteLine(i);
+                    int max = 500;
+                    for (byte i = 0; i < max; i++)
+                    {
+                        WriteLine(i);
+                    }
                 }
             }
             catch
