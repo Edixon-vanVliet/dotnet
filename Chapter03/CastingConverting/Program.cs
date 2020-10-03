@@ -75,6 +75,11 @@ namespace CastingConverting
             }
 
             WriteLine();
+
+            // convert to Base64 string and output as text
+            string encoded = Convert.ToBase64String(binaryObject);
+
+            WriteLine($"Binary Object as Base64: {encoded}");
         }
     }
 }
