@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace IterationStatements
 {
@@ -6,7 +7,13 @@ namespace IterationStatements
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int x = 0;
+
+            while (x < 10)
+            {
+                WriteLine(x);
+                x++;
+            }
         }
     }
 }
