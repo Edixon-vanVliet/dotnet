@@ -16,15 +16,18 @@ namespace Exercise03
         {
             for (int i = 1; i <= 100; i++)
             {
-                if (i % 3 == 0 && i % 5 == 0)
+                bool fizz = i % 3 == 0;
+                bool buzz = i % 5 == 0;
+
+                if (fizz && buzz)
                 {
                     Write($"fizzbuzz, ");
                 }
-                else if (i % 3 == 0)
+                else if (fizz)
                 {
                     Write($"fizz, ");
                 }
-                else if (i % 5 == 0)
+                else if (buzz)
                 {
                     Write($"buzz, ");
                 }
