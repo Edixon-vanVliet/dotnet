@@ -22,8 +22,10 @@ namespace Exercise02
                     }
                 }
             }
-            catch
-            { }
+            catch (Exception ex)
+            {
+                WriteLine($"{ex.GetType()} says {ex.Message}");
+            }
         }
     }
 }
