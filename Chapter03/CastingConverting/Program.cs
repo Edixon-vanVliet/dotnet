@@ -11,6 +11,11 @@ namespace CastingConverting
             double b = a; // an int can be safely cast into a double
 
             WriteLine(b);
+
+            double c = 9.8;
+            int d = (int)c; // need to cast explicitly or else compiler gives an error
+
+            WriteLine(d); // d is 9 losing the .8 part
         }
     }
 }
