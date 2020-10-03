@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace CastingConverting
 {
@@ -6,7 +7,10 @@ namespace CastingConverting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int a = 10;
+            double b = a; // an int can be safely cast into a double
+
+            WriteLine(b);
         }
     }
 }
