@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace HandlingExceptions
 {
@@ -6,7 +7,22 @@ namespace HandlingExceptions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Before parsing");
+            Write("What is your age? ");
+
+            string input = Console.ReadLine();
+
+            try
+            {
+                int age = int.Parse(input);
+
+                WriteLine($"You are {age} years old.");
+            }
+            catch
+            {
+            }
+
+            WriteLine("After parsing");
         }
     }
 }
