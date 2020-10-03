@@ -1,4 +1,9 @@
 ﻿using System;
+using static System.Console;
+
+/// <summary>
+/// What code could you add to warn us about the problem?
+/// </summary>
 
 namespace Exercise02
 {
@@ -6,7 +11,11 @@ namespace Exercise02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int max = 500;
+            for (byte i = 0; i < max; i++)
+            {
+                WriteLine(i);
+            }
         }
     }
 }
