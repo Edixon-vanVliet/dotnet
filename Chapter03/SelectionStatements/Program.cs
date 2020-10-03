@@ -17,7 +17,7 @@ namespace SelectionStatements
             }
 
             // add en remove the "" to change the behavior
-            object o = "3";
+            object o = 3;
             int j = 4;
 
             if (o is int i)
