@@ -26,6 +26,9 @@
 		},
 		{
 			"path": "CheckingForOverflow"
+		},
+		{
+			"path": "Exercise02"
 		}
 	],
 	"settings": {}
