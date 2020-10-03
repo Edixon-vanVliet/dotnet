@@ -30,6 +30,13 @@ namespace IterationStatements
             {
                 WriteLine(y);
             }
+
+            string[] names = { "Adam", "Barry", "Charlie" };
+
+            foreach (var name in names)
+            {
+                WriteLine($"{name} has {name.Length} characters.");
+            }
         }
     }
 }
