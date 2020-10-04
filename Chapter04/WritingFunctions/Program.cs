@@ -144,7 +144,8 @@ namespace WritingFunctions
         static void Main(string[] args)
         {
             // RunTimesTable();
-            RunCalculateTax();
+            // RunCalculateTax();
+            RunCardinalToOrdinal();
         }
     }
 }
