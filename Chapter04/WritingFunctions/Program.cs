@@ -87,7 +87,7 @@ namespace WritingFunctions
             string amountInText = ReadLine();
 
             Write("Enter a two-letter region code: ");
-            string region = ReadLine();
+            string region = ReadLine().ToUpper();
 
             if (decimal.TryParse(amountInText, out decimal amount))
             {
