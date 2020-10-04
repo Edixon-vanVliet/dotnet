@@ -132,6 +132,15 @@ namespace WritingFunctions
             }
         }
 
+        static void RunCardinalToOrdinal()
+        {
+            for (int number = 1; number <= 40; number++)
+            {
+                Write($"{CardinalToOrdinal(number)} ");
+            }
+            WriteLine();
+        }
+
         static void Main(string[] args)
         {
             // RunTimesTable();
