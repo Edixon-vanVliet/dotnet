@@ -103,7 +103,8 @@ namespace WritingFunctions
 
         static void Main(string[] args)
         {
-            RunTimesTable();
+            // RunTimesTable();
+            RunCalculateTax();
         }
     }
 }
