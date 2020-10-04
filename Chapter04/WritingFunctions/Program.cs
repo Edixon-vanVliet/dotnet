@@ -157,6 +157,28 @@ namespace WritingFunctions
             }
         }
 
+        static void RunFactorial()
+        {
+            bool isNumber;
+
+            do
+            {
+                Write("Enter a number");
+
+                isNumber = int.TryParse(ReadLine(), out int number);
+
+                if (isNumber)
+                {
+                    WriteLine($"{number:n0}! = {Factorial(number):n0}");
+                }
+                else
+                {
+                    WriteLine("You did not enter a valid number!");
+                }
+            }
+            while (isNumber);
+        }
+
         static void Main(string[] args)
         {
             // RunTimesTable();
