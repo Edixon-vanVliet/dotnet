@@ -81,6 +81,26 @@ namespace WritingFunctions
             return amount * rate;
         }
 
+        static void RunCalculateTax()
+        {
+            Write("Enter an amount: ");
+            string amountInText = ReadLine();
+
+            Write("Enter a two-letter region code: ");
+            string region = ReadLine();
+
+            if (decimal.TryParse(amountInText, out decimal amount))
+            {
+                decimal taxToPay = CalculateTax(amount, region);
+
+                WriteLine($"You must pay {taxToPay} in sales tax.");
+            }
+            else
+            {
+                WriteLine("You did not enter a valid amount!");
+            }
+        }
+
         static void Main(string[] args)
         {
             RunTimesTable();
