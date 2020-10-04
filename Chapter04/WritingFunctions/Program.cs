@@ -163,7 +163,7 @@ namespace WritingFunctions
 
             do
             {
-                Write("Enter a number");
+                Write("Enter a number: ");
 
                 isNumber = int.TryParse(ReadLine(), out int number);
 
@@ -183,7 +183,8 @@ namespace WritingFunctions
         {
             // RunTimesTable();
             // RunCalculateTax();
-            RunCardinalToOrdinal();
+            // RunCardinalToOrdinal();
+            RunFactorial();
         }
     }
 }
