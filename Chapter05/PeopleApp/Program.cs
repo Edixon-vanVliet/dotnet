@@ -1,4 +1,6 @@
 ﻿using System;
+using Packt.Shared;
+using static System.Console;
 
 namespace PeopleApp
 {
@@ -6,7 +8,8 @@ namespace PeopleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var edixon = new Person();
+            WriteLine(edixon.ToString());
         }
     }
 }
