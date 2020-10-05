@@ -27,7 +27,7 @@ namespace PrimeFactorsTests
         {
             // arrange
             int a = 7;
-            string expected = "2";
+            string expected = "7";
 
             var primeFactors = new Primes();
 
