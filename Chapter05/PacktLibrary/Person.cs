@@ -4,5 +4,8 @@ namespace Packt.Shared
 {
     public class Person
     {
+        // fields
+        public string Name;
+        public DateTime DateOfBirth;
     }
 }
