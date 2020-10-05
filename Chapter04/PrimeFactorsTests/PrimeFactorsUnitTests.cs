@@ -13,10 +13,8 @@ namespace PrimeFactorsTests
             int a = 4;
             string expected = "2 x 2";
 
-            var primeFactors = new Primes();
-
             // act
-            string actual = primeFactors.PrimeFactors(a);
+            string actual = Primes.PrimeFactors(a);
 
             // assert
             Assert.Equal(expected, actual);
@@ -29,10 +27,8 @@ namespace PrimeFactorsTests
             int a = 7;
             string expected = "7";
 
-            var primeFactors = new Primes();
-
             // act
-            string actual = primeFactors.PrimeFactors(a);
+            string actual = Primes.PrimeFactors(a);
 
             // assert
             Assert.Equal(expected, actual);
@@ -45,10 +41,8 @@ namespace PrimeFactorsTests
             int a = 30;
             string expected = "5 x 3 x 2";
 
-            var primeFactors = new Primes();
-
             // act
-            string actual = primeFactors.PrimeFactors(a);
+            string actual = Primes.PrimeFactors(a);
 
             // assert
             Assert.Equal(expected, actual);
@@ -61,10 +55,8 @@ namespace PrimeFactorsTests
             int a = 40;
             string expected = "5 x 2 x 2 x 2";
 
-            var primeFactors = new Primes();
-
             // act
-            string actual = primeFactors.PrimeFactors(a);
+            string actual = Primes.PrimeFactors(a);
 
             // assert
             Assert.Equal(expected, actual);
@@ -77,10 +69,8 @@ namespace PrimeFactorsTests
             int a = 50;
             string expected = "5 x 5 x 2";
 
-            var primeFactors = new Primes();
-
             // act
-            string actual = primeFactors.PrimeFactors(a);
+            string actual = Primes.PrimeFactors(a);
 
             // assert
             Assert.Equal(expected, actual);
