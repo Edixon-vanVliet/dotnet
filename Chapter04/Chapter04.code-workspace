@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "CalculatorLib"
+		},
+		{
+			"path": "CalculatorLibUnitTests"
 		}
 	],
 	"settings": {}
