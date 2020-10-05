@@ -1,4 +1,6 @@
 ﻿using System;
+using PrimeFactorsLib;
+using static System.Console;
 
 namespace PrimeFactorsApp
 {
@@ -6,7 +8,24 @@ namespace PrimeFactorsApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            bool isNumber;
+
+            do
+            {
+                Write("Enter a number between 0 and 1000: ");
+
+                isNumber = int.TryParse(ReadLine(), out int number);
+
+                if (isNumber)
+                {
+                    WriteLine($"Prime factors: {Primes.PrimeFactors(number)}");
+                }
+                else
+                {
+                    WriteLine("You did not enter a valid number!");
+                }
+            }
+            while (isNumber);
         }
     }
 }
