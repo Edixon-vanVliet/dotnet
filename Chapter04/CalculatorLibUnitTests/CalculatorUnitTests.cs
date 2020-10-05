@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CalculatorLibUnitTests
 {
-    public class UnitTest1
+    public class CalculatorUnitTests
     {
         [Fact]
         public void Test1()
