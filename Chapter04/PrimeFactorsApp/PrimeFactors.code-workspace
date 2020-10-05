@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "..\\PrimeFactorsLib"
+		},
+		{
+			"path": "..\\PrimeFactorsTests"
 		}
 	],
 	"settings": {}
