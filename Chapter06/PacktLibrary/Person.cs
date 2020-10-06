@@ -68,5 +68,17 @@ namespace Packt.Shared
 
         // data field
         public int AngerLevel;
+
+        // method
+        public void Poke()
+        {
+            AngerLevel++;
+
+            if (AngerLevel >= 3)
+            {
+                // if something is listening then call the delegate
+                Shout?.Invoke(this, EventArgs.Empty);
+            }
+        }
     }
 }
