@@ -111,6 +111,8 @@ namespace PeopleApp
             WriteLine(edixon.OptionalParameters());
 
             WriteLine(edixon.OptionalParameters("Jump!", 98.5));
+
+            WriteLine(edixon.OptionalParameters(number: 52.7, command: "Hide!"));
         }
     }
 }
