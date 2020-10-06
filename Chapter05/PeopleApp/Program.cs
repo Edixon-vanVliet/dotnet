@@ -151,6 +151,12 @@ namespace PeopleApp
             WriteLine(
                 $"{sam.Name}'s favorite ice-cream flavor is {sam.FavoriteIceCream}."
             );
+
+            sam.FavoritePrimaryColor = "Red";
+            
+            WriteLine(
+                $"{sam.Name}'s favorite primary color is {sam.FavoritePrimaryColor}."
+            );
         }
     }
 }
