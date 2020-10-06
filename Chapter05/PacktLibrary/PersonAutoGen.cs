@@ -11,6 +11,7 @@ namespace Packt.Shared
             }
         }
 
-
+        // two properties defined using C# 6+ lambda expression syntax
+        public string Greeting => $"{Name} says 'Hello!'";
     }
 }
