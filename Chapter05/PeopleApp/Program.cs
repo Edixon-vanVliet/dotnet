@@ -86,6 +86,9 @@ namespace PeopleApp
                 gunny.HomePlanet,
                 gunny.Instantiated
             );
+
+            edixon.WriteToConsole();
+            WriteLine(edixon.GetOrigin());
         }
     }
 }
