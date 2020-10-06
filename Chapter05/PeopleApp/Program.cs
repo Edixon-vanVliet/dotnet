@@ -17,6 +17,15 @@ namespace PeopleApp
                 edixon.Name,
                 edixon.DateOfBirth
             );
+
+            edixon.FavoriteAncientWonder = WondersOfTheAncientWorld.StatueOfZeusAtOlympia;
+
+            WriteLine(
+                "{0}'s favorite wonder is {1}. It's integer is {2}.",
+                edixon.Name,
+                edixon.FavoriteAncientWonder,
+                (int)edixon.FavoriteAncientWonder
+            );
         }
     }
 }
