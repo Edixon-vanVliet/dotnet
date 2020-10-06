@@ -15,6 +15,9 @@ namespace PeopleApp
 
             // call instance method
             var baby1 = mary.Procreate(harry);
+
+            // call static method
+            var baby2 = Person.Procreate(harry, jill);
         }
     }
 }
