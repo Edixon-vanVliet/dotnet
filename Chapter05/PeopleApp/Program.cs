@@ -54,6 +54,10 @@ namespace PeopleApp
                 jonesAccount.AccountName,
                 jonesAccount.Balance * BankAccount.InterestRate
             );
+
+            var gerrierAccount = new BankAccount();
+            gerrierAccount.AccountName = "Ms. Gerrier";
+            gerrierAccount.Balance = 98m;
         }
     }
 }
