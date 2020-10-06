@@ -1,4 +1,7 @@
 ﻿using System;
+using Packt.Shared;
+
+using static System.Console;
 
 namespace PeopleApp
 {
@@ -6,7 +9,9 @@ namespace PeopleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var harry = new Person { Name = "Harry" };
+            var mary = new Person { Name = "Mary" };
+            var jill = new Person { Name = "Jill" };
         }
     }
 }
