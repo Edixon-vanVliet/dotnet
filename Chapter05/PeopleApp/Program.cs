@@ -115,6 +115,16 @@ namespace PeopleApp
             WriteLine(edixon.OptionalParameters(number: 52.7, command: "Hide!"));
 
             WriteLine(edixon.OptionalParameters("Poke!", active: false));
+
+            int a = 10;
+            int b = 20;
+            int c = 30;
+
+            WriteLine($"Before: a = {a}, b = {b}, c = {c}");
+
+            edixon.PassingParameters(a, ref b, out c);
+
+            WriteLine($"After: a = {a}, b = {b}, c = {c}");
         }
     }
 }
