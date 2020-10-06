@@ -125,6 +125,16 @@ namespace PeopleApp
             edixon.PassingParameters(a, ref b, out c);
 
             WriteLine($"After: a = {a}, b = {b}, c = {c}");
+
+            int d = 10;
+            int e = 20;
+            WriteLine(
+             $"Before: d = {d}, e = {e}, f doesn't exist yet!");
+
+            // simplified C# 7.0 syntax for the out parameter
+            edixon.PassingParameters(d, ref e, out int f);
+
+            WriteLine($"After: d = {d}, e = {e}, f = {f}");
         }
     }
 }
