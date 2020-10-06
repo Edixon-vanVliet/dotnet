@@ -107,6 +107,8 @@ namespace PeopleApp
 
             WriteLine(edixon.SayHello());
             WriteLine(edixon.SayHello("Emily"));
+
+            WriteLine(edixon.OptionalParameters());
         }
     }
 }
