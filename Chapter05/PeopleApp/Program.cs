@@ -35,6 +35,8 @@ namespace PeopleApp
 
             edixon.Children.Add(new Person { Name = "Alfred" });
             edixon.Children.Add(new Person { Name = "Zoe" });
+
+            WriteLine($"{edixon.Name} has {edixon.Children.Count} children: ");
         }
     }
 }
