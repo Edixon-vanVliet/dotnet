@@ -26,6 +26,12 @@ namespace PeopleApp
                 edixon.FavoriteAncientWonder,
                 (int)edixon.FavoriteAncientWonder
             );
+
+            edixon.BucketList =
+                WondersOfTheAncientWorld.HangingGardensOfBabylon
+                | WondersOfTheAncientWorld.MausoleumAtHalicarnassus;
+
+            WriteLine($"{edixon.Name}'s bucket list is {edixon.BucketList}");
         }
     }
 }
