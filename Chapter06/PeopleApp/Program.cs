@@ -38,6 +38,14 @@ namespace PeopleApp
             harry.Poke();
             harry.Poke();
             harry.Poke();
+
+            Person[] people =
+            {
+                new Person {Name = "Simon"},
+                new Person {Name = "Jenny"},
+                new Person {Name = "Adam"},
+                new Person {Name = "Richard"}
+            };
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
