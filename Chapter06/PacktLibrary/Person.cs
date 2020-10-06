@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace Packt.Shared
 {
-    public class Person
+    public class Person: IComparable<Person>
     {
         // fields
         public string Name;
@@ -79,6 +79,11 @@ namespace Packt.Shared
                 // if something is listening then call the delegate
                 Shout?.Invoke(this, EventArgs.Empty);
             }
+        }
+
+        public int CompareTo(Person other)
+        {
+            return Name.CompareTo(other.Name);
         }
     }
 }
