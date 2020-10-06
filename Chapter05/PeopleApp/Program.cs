@@ -101,6 +101,9 @@ namespace PeopleApp
 
             var thing2 = (edixon.Name, edixon.Children.Count);
             WriteLine($"{thing2.Name} has {thing2.Count} children.");
+
+            (string fruitName, int fruitNumber) = edixon.GetFruit();
+            WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
         }
     }
 }
