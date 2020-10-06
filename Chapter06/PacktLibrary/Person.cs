@@ -55,12 +55,15 @@ namespace Packt.Shared
             }
 
             return localFactorial(number);
-            
+
             int localFactorial(int localNumber)
             {
                 if (localNumber < 1) return 1;
                 return localNumber * localFactorial(localNumber - 1);
             }
         }
+
+        // event delegate field
+        public EventHandler Shout;
     }
 }
