@@ -15,5 +15,6 @@ namespace Packt.Shared
         public string Greeting => $"{Name} says 'Hello!'";
         public int Age => System.DateTime.Today.Year - DateOfBirth.Year;
         public string FavoriteIceCream { get; set; } // auto-syntax
+        private string favoritePrimaryColor;
     }
 }
