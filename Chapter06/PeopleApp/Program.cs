@@ -32,7 +32,7 @@ namespace PeopleApp
 
             WriteLine($"5! is {Person.Factorial(5)}");
 
-            harry.Shout = Harry_Shout;
+            harry.Shout += Harry_Shout;
 
             harry.Poke();
             harry.Poke();
