@@ -64,6 +64,8 @@ namespace PeopleApp
                 gerrierAccount.AccountName,
                 gerrierAccount.Balance * BankAccount.InterestRate
             );
+
+            WriteLine($"{edixon.Name} is a {Person.Species}");
         }
     }
 }
