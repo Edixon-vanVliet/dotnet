@@ -31,5 +31,11 @@ namespace Packt.Shared
 
             return baby;
         }
+
+        // instance method to "multiply"
+        public Person Procreate(Person partner)
+        {
+            return Procreate(this, partner);
+        }
     }
 }
