@@ -92,6 +92,9 @@ namespace PeopleApp
 
             (string, int) fruit = edixon.GetFruit();
             WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
+
+            var fruitNamed = edixon.GetNamedFruit();
+            WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}");
         }
     }
 }
