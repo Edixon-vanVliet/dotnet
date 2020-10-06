@@ -31,6 +31,8 @@ namespace PeopleApp
             );
 
             WriteLine($"5! is {Person.Factorial(5)}");
+
+            harry.Shout = Harry_Shout;
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
