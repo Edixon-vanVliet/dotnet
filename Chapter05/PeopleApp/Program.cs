@@ -109,6 +109,8 @@ namespace PeopleApp
             WriteLine(edixon.SayHello("Emily"));
 
             WriteLine(edixon.OptionalParameters());
+
+            WriteLine(edixon.OptionalParameters("Jump!", 98.5));
         }
     }
 }
