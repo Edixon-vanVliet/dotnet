@@ -66,6 +66,8 @@ namespace PeopleApp
             );
 
             WriteLine($"{edixon.Name} is a {Person.Species}");
+
+            WriteLine($"{edixon.Name} was born on {edixon.HomePlanet}");
         }
     }
 }
