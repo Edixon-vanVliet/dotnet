@@ -104,6 +104,9 @@ namespace PeopleApp
 
             (string fruitName, int fruitNumber) = edixon.GetFruit();
             WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
+
+            WriteLine(edixon.SayHello());
+            WriteLine(edixon.SayHelloTo("Emily"));
         }
     }
 }
