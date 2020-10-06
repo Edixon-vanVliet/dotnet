@@ -145,6 +145,12 @@ namespace PeopleApp
             WriteLine(sam.Origin);
             WriteLine(sam.Greeting);
             WriteLine(sam.Age);
+
+            sam.FavoriteIceCream = "Chocolate Fudge";
+
+            WriteLine(
+                $"{sam.Name}'s favorite ice-cream flavor is {sam.FavoriteIceCream}."
+            );
         }
     }
 }
