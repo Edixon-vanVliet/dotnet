@@ -46,6 +46,12 @@ namespace PeopleApp
                 new Person {Name = "Adam"},
                 new Person {Name = "Richard"}
             };
+
+            WriteLine("Initial list of people:");
+            foreach (var person in people)
+            {
+                WriteLine($"{person.Name}");
+            }
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
