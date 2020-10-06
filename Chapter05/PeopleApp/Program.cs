@@ -106,7 +106,7 @@ namespace PeopleApp
             WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
 
             WriteLine(edixon.SayHello());
-            WriteLine(edixon.SayHelloTo("Emily"));
+            WriteLine(edixon.SayHello("Emily"));
         }
     }
 }
