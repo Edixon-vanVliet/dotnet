@@ -32,6 +32,9 @@ namespace PeopleApp
                 | WondersOfTheAncientWorld.MausoleumAtHalicarnassus;
 
             WriteLine($"{edixon.Name}'s bucket list is {edixon.BucketList}");
+
+            edixon.Children.Add(new Person { Name = "Alfred" });
+            edixon.Children.Add(new Person { Name = "Zoe" });
         }
     }
 }
