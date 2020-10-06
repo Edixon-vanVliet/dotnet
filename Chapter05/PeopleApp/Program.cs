@@ -44,6 +44,10 @@ namespace PeopleApp
             }
 
             BankAccount.InterestRate = 0.012m;
+
+            var jonesAccount = new BankAccount();
+            jonesAccount.AccountName = "Mrs. Jones";
+            jonesAccount.Balance = 2400m;
         }
     }
 }
