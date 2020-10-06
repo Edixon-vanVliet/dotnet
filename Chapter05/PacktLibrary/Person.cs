@@ -41,5 +41,10 @@ namespace Packt.Shared
         {
             WriteLine($"{Name} was born on a {DateOfBirth:dddd}.");
         }
+
+        public string GetOrigin()
+        {
+            return $"{Name} was born on {HomePlanet}";
+        }
     }
 }
