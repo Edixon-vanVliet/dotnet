@@ -68,6 +68,15 @@ namespace PeopleApp
             WriteLine($"{edixon.Name} is a {Person.Species}");
 
             WriteLine($"{edixon.Name} was born on {edixon.HomePlanet}");
+
+            var blankPerson = new Person();
+
+            WriteLine(format:
+                "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
+                blankPerson.Name,
+                blankPerson.HomePlanet,
+                blankPerson.Instantiated
+            );
         }
     }
 }
