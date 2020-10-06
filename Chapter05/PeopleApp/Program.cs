@@ -58,6 +58,12 @@ namespace PeopleApp
             var gerrierAccount = new BankAccount();
             gerrierAccount.AccountName = "Ms. Gerrier";
             gerrierAccount.Balance = 98m;
+
+            WriteLine(
+                "{0} earned {1:c} interest.",
+                gerrierAccount.AccountName,
+                gerrierAccount.Balance * BankAccount.InterestRate
+            );
         }
     }
 }
