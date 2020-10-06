@@ -17,5 +17,15 @@ namespace Packt.Shared
 
         // read-only fields
         public readonly string HomePlanet = "Earth";
+        public readonly DateTime Instantiated;
+
+        // constructors
+        public Person()
+        {
+            // Set default values for fields
+            // including read-only fields
+            Name = "Unknown";
+            Instantiated = DateTime.Now;
+        }
     }
 }
