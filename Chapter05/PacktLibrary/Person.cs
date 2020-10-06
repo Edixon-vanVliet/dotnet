@@ -66,5 +66,16 @@ namespace Packt.Shared
         {
             return $"{Name} says 'Hello {name}!'";
         }
+
+        public string OptionalParameters(
+            string command = "Run!",
+            double number = 0.0,
+            bool active = true
+        )
+        {
+            return string.Format(
+                $"command is {command}, number is {number}, active is {active}"
+            );
+        }
     }
 }
