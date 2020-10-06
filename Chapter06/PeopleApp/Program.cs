@@ -12,6 +12,9 @@ namespace PeopleApp
             var harry = new Person { Name = "Harry" };
             var mary = new Person { Name = "Mary" };
             var jill = new Person { Name = "Jill" };
+
+            // call instance method
+            var baby1 = mary.Procreate(harry);
         }
     }
 }
