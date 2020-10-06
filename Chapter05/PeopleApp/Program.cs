@@ -42,6 +42,8 @@ namespace PeopleApp
             {
                 WriteLine($"  {child.Name}");
             }
+
+            BankAccount.InterestRate = 0.012m;
         }
     }
 }
