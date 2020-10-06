@@ -48,6 +48,12 @@ namespace PeopleApp
             var jonesAccount = new BankAccount();
             jonesAccount.AccountName = "Mrs. Jones";
             jonesAccount.Balance = 2400m;
+
+            WriteLine(
+                "{0} earned {1:c} interest.",
+                jonesAccount.AccountName,
+                jonesAccount.Balance * BankAccount.InterestRate
+            );
         }
     }
 }
