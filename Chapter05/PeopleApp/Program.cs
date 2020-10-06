@@ -77,6 +77,15 @@ namespace PeopleApp
                 blankPerson.HomePlanet,
                 blankPerson.Instantiated
             );
+
+            var gunny = new Person("Gunny", "Mars");
+
+            WriteLine(
+                "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
+                gunny.Name,
+                gunny.HomePlanet,
+                gunny.Instantiated
+            );
         }
     }
 }
