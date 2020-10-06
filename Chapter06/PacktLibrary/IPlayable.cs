@@ -6,5 +6,10 @@ namespace Packt.Shared
     {
          void Play();
          void Pause();
+
+         void Stop()
+         {
+             WriteLine("Default implementation of Stop.");
+         }
     }
 }
