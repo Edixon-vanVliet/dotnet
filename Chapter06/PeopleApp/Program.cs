@@ -102,6 +102,14 @@ namespace PeopleApp
             WriteLine(
                 $"({dv1.X}, {dv1.Y}) + ({dv2.X}, {dv2.Y}) = ({ dv3.X}, { dv3.Y})"
             );
+
+            Employee john = new Employee
+            {
+                Name = "John Jones",
+                DateOfBirth = new DateTime(1990, 7, 28)
+            };
+
+            john.WriteToConsole();
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
