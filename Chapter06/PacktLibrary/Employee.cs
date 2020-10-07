@@ -17,5 +17,10 @@ namespace Packt.Shared
                 HireDate
             );
         }
+
+        public override string ToString()
+        {
+            return $"{Name}'s code is {EmployeeCode}";
+        }
     }
 }
