@@ -115,6 +115,8 @@ namespace PeopleApp
             john.HireDate = new DateTime(2014, 11, 23);
 
             WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
+
+            WriteLine(john.ToString());
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
