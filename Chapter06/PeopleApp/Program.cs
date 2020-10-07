@@ -94,6 +94,9 @@ namespace PeopleApp
 
             byte number2 = 3;
             WriteLine($"{number2} squared is {Squarer.Square(number2)}");
+
+            var dv1 = new DisplacementVector(3, 5);
+            var dv2 = new DisplacementVector(-2, 7);
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
