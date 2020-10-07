@@ -88,6 +88,12 @@ namespace PeopleApp
             gt2.Data = "apple";
 
             WriteLine($"GenericThing with a string: {gt2.Process("apple")}");
+
+            string number1 = "4";
+            WriteLine($"{number1} squared is {Squarer.Square<string>(number1)}");
+
+            byte number2 = 3;
+            WriteLine($"{number2} squared is {Squarer.Square(number2)}");
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
