@@ -63,11 +63,21 @@ namespace PeopleApp
 
             WriteLine("Use PersonComparer's IComparer implementation to sort:");
             Array.Sort(people, new PersonComparer());
-            
+
             foreach (var person in people)
             {
                 WriteLine($"{person.Name}");
             }
+
+            var t1 = new Thing();
+            t1.Data = 42;
+
+            WriteLine($"Thing with an integer: {t1.Process(42)}");
+
+            var t2 = new Thing();
+            t2.Data = "apple";
+
+            WriteLine($"Thing with a string: {t2.Process("apple")}");
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
