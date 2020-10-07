@@ -110,6 +110,11 @@ namespace PeopleApp
             };
 
             john.WriteToConsole();
+
+            john.EmployeeCode = "JJ001";
+            john.HireDate = new DateTime(2014, 11, 23);
+
+            WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
