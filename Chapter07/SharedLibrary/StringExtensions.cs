@@ -16,6 +16,7 @@ namespace Packt.Shared
             // minimum of eight valid characters
             return Regex.IsMatch(input, "^[a-zA-Z0-9_-]{8,}$");
         }
+
         public static bool IsValidHex(this string input)
         {
             // three or six valid hex number characters
