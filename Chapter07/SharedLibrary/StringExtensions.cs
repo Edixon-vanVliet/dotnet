@@ -2,7 +2,7 @@
 
 namespace Packt.Shared
 {
-    public class StringExtensions
+    public static class StringExtensions
     {
         
     }
