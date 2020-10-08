@@ -32,6 +32,18 @@ namespace WorkingWithRegularExpressions
             {
                 WriteLine(film);
             }
+
+            var csv = new Regex(
+                "(?:^|,)(?=[^\"]|(\")?)\"?((?(1)[^\"]*|[^,\"]*))\"?(?=,|$)"
+            );
+
+            MatchCollection filmsSmart = csv.Matches(films);
+
+            WriteLine("Smart attempt at splitting:");
+            foreach (Match film in filmsSmart)
+            {
+                WriteLine(film.Groups[2].Value);
+            }
         }
     }
 }
