@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "AssembliesAndNamespaces"
+		},
+		{
+			"path": "SharedLibrary"
 		}
 	],
 	"settings": {}
