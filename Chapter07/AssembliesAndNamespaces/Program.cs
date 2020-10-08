@@ -8,6 +8,9 @@ namespace AssembliesAndNamespaces
         static void Main(string[] args)
         {
             var doc = new XDocument();
+
+            string s1 = "Hello";
+            String s2 = "World";
         }
     }
 }
