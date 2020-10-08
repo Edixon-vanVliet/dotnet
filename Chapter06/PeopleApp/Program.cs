@@ -154,13 +154,13 @@ namespace PeopleApp
             WriteLine(
                 "{0} is a valid email address: {1}",
                 email1,
-                StringExtensions.IsValidEmail(email1)
+                email1.IsValidEmail()
             );
 
             WriteLine(
                 "{0} is a valid email address: {1}",
                 email2,
-                StringExtensions.IsValidEmail(email2)
+                email2.IsValidEmail()
             );
         }
 
