@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace WorkingWithText
 {
@@ -6,7 +7,8 @@ namespace WorkingWithText
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string city = "London";
+            WriteLine($"{city} is {city.Length} characters long.");
         }
     }
 }
