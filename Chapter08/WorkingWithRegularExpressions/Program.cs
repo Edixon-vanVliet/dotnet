@@ -12,7 +12,7 @@ namespace WorkingWithRegularExpressions
             Write("Enter your age: ");
             string input = ReadLine();
 
-            var ageChecker = new Regex(@"\d");
+            var ageChecker = new Regex(@"^\d+$");
 
             if (ageChecker.IsMatch(input))
             {
