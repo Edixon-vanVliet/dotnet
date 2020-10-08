@@ -28,6 +28,12 @@ namespace WorkingWithText
             string lastName = fullName.Substring(indexOfTheSpace + 1);
 
             WriteLine($"{lastName}, {firstName}");
+
+            string company = "Microsoft";
+            bool startWithM = company.StartsWith('M');
+            bool containsN = company.Contains('N');
+
+            WriteLine($"Starts with M: {startWithM}, contains an N: {containsN}");
         }
     }
 }
