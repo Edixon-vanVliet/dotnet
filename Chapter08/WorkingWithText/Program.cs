@@ -20,6 +20,9 @@ namespace WorkingWithText
             {
                 WriteLine(item);
             }
+
+            string fullName = "Alan Jones";
+            int indexOfTheSpace = fullName.IndexOf(' ');
         }
     }
 }
