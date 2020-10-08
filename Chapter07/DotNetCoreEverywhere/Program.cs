@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace DotNetCoreEverywhere
 {
@@ -6,7 +7,7 @@ namespace DotNetCoreEverywhere
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("I can run everywhere!");
         }
     }
 }
