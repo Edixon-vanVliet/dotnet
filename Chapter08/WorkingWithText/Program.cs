@@ -23,6 +23,11 @@ namespace WorkingWithText
 
             string fullName = "Alan Jones";
             int indexOfTheSpace = fullName.IndexOf(' ');
+
+            string firstName = fullName.Substring(0, indexOfTheSpace + 1);
+            string lastName = fullName.Substring(indexOfTheSpace + 1);
+
+            WriteLine($"{lastName}, {firstName}");
         }
     }
 }
