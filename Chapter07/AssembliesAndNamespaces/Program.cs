@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace AssembliesAndNamespaces
 {
@@ -6,7 +7,7 @@ namespace AssembliesAndNamespaces
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var doc = new XDocument();
         }
     }
 }
