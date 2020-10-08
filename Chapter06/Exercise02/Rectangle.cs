@@ -2,14 +2,14 @@ namespace Exercise02
 {
     public class Rectangle : Shape
     {
-        public Rectangle(float height, float width)
+        public Rectangle(double height, double width)
         {
             Height = height;
             Width = width;
             Area = CalculateArea();
         }
 
-        private float CalculateArea()
+        private double CalculateArea()
         {
             return Width * Height;
         }
