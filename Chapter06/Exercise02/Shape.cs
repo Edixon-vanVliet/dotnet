@@ -2,8 +2,8 @@ namespace Exercise02
 {
     public class Shape
     {
-        public float Width { get; set; }
-        public float Height { get; set; }
-        public float Area { get; set; }
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public double Area { get; set; }
     }
 }
