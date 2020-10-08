@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace WorkingWithRanges
 {
@@ -6,7 +7,13 @@ namespace WorkingWithRanges
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string name = "Samantha Jones";
+            int indexOfSpace = name.IndexOf(' ');
+
+            string firstName = name.Substring(0, indexOfSpace);
+            string lastName = name.Substring(indexOfSpace + 1);
+
+            WriteLine($"First name: {firstName}, Last name: {lastName}");
         }
     }
 }
