@@ -143,10 +143,25 @@ namespace PeopleApp
                 john.TimeTravel(new DateTime(1999, 12, 31));
                 john.TimeTravel(new DateTime(1950, 12, 25));
             }
-            catch(PersonException ex)
+            catch (PersonException ex)
             {
                 WriteLine(ex.Message);
             }
+
+            string email1 = "pamela@test.com";
+            string email2 = "ian&test.com";
+
+            WriteLine(
+                "{0} is a valid email address: {1}",
+                email1,
+                StringExtensions.IsValidEmail(email1)
+            );
+
+            WriteLine(
+                "{0} is a valid email address: {1}",
+                email2,
+                StringExtensions.IsValidEmail(email2)
+            );
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
