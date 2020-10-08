@@ -9,9 +9,6 @@ namespace Exercise02
             Area = CalculateArea();
         }
 
-        private double CalculateArea()
-        {
-            return Width * Height;
-        }
+        private double CalculateArea() => Width * Height;
     }
 }

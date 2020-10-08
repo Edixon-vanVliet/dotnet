@@ -10,9 +10,6 @@ namespace Exercise02
             Area = CalculateArea();
         }
 
-        private double CalculateArea()
-        {
-            return Math.Pow(Height, 2);
-        }
+        private double CalculateArea() => Math.Pow(Height, 2);
     }
 }
