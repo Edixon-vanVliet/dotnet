@@ -34,6 +34,9 @@ namespace WorkingWithText
             bool containsN = company.Contains('N');
 
             WriteLine($"Starts with M: {startWithM}, contains an N: {containsN}");
+
+            string recombined = string.Join(" => ", citiesArray);
+            WriteLine(recombined);
         }
     }
 }
