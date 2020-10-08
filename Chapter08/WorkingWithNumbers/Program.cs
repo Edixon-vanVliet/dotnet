@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Numerics;
+
+using static System.Console;
 
 namespace WorkingWithNumbers
 {
@@ -6,7 +9,9 @@ namespace WorkingWithNumbers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var largest = ulong.MaxValue;
+
+            WriteLine($"{largest,40:n0}");
         }
     }
 }
