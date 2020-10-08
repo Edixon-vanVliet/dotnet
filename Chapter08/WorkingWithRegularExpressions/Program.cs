@@ -22,6 +22,16 @@ namespace WorkingWithRegularExpressions
             {
                 WriteLine($"This is not a valid age: {input}");
             }
+
+            string films = "\"Monsters, Inc.\",\"I, Tonya\",\"Lock, Stock and Two Smoking Barrels\"";
+
+            string[] filmsDumb = films.Split(',');
+
+            WriteLine("Dumb attempt at splitting:");
+            foreach (string film in filmsDumb)
+            {
+                WriteLine(film);
+            }
         }
     }
 }
