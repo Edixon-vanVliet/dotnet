@@ -8,10 +8,11 @@ namespace WorkingWithRanges
         static void Main(string[] args)
         {
             string name = "Samantha Jones";
-            int indexOfSpace = name.IndexOf(' ');
+            int lengthOfFirst = name.IndexOf(' ');
+            int lengthOfLast = name.Length - name.IndexOf(' ') - 1;
 
-            string firstName = name.Substring(0, indexOfSpace);
-            string lastName = name.Substring(indexOfSpace + 1);
+            string firstName = name.Substring(0, lengthOfFirst);
+            string lastName = name.Substring(lengthOfFirst + 1, lengthOfLast);
 
             WriteLine($"First name: {firstName}, Last name: {lastName}");
         }
