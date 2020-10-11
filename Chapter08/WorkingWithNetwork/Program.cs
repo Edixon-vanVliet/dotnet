@@ -9,7 +9,8 @@ namespace WorkingWithNetwork
     {
         static void Main(string[] args)
         {
-
+            Write("Enter a valid web address: ");
+            string url = ReadLine();
         }
     }
 }
