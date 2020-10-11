@@ -21,6 +21,12 @@ namespace WorkingWithReflection
             {
                 WriteLine($"    {attribute.GetType()}");
             }
+
+            var version = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>();
+            WriteLine($" Version: {version.InformationalVersion}");
+            var company = assembly.GetCustomAttribute
+             <AssemblyCompanyAttribute>();
+            WriteLine($" Company: {company.Company}");
         }
     }
 }
