@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net;
+
+using static System.Console;
 
 namespace WorkingWithNetwork
 {
@@ -6,7 +9,7 @@ namespace WorkingWithNetwork
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }
