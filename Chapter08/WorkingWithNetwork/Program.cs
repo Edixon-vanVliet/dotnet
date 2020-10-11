@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Net.NetworkInformation;
 
 using static System.Console;
 
@@ -32,6 +33,19 @@ namespace WorkingWithNetwork
             foreach (IPAddress address in entry.AddressList)
             {
                 WriteLine($"  {address}");
+            }
+
+            try
+            {
+                var ping = new Ping();
+                WriteLine("Pinging server. Please wait...");
+
+                PingReply reply = ping.Send(uri.Host);
+                WriteLine($"{uri.Host} was pinged and replied: {reply.Status}");
+            }
+            catch (Exception ex)
+            {
+                WriteLine($"{ex.GetType().ToString()} says {ex.Message}");
             }
         }
     }
