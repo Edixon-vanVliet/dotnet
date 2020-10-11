@@ -15,6 +15,16 @@ namespace WorkingWithRanges
             string lastName = name.Substring(lengthOfFirst + 1, lengthOfLast);
 
             WriteLine($"First name: {firstName}, Last name: {lastName}");
+
+            ReadOnlySpan<char> nameAsSpan = name.AsSpan();
+            var firstNameSpan = nameAsSpan[..lengthOfFirst];
+            var lastNameSpan = nameAsSpan[^lengthOfLast..];
+
+            WriteLine(
+                "First name: {0}, Last name: {1}",
+                firstNameSpan.ToString(),
+                lastNameSpan.ToString()
+            );
         }
     }
 }
