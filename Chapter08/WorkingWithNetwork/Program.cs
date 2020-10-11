@@ -11,6 +11,11 @@ namespace WorkingWithNetwork
         {
             Write("Enter a valid web address: ");
             string url = ReadLine();
+
+            if (string.IsNullOrEmpty(url))
+            {
+                url = "https://world.episerver.com/cms/?q=pagetype";
+            }
         }
     }
 }
