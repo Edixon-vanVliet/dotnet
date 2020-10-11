@@ -28,5 +28,11 @@ namespace WorkingWithReflection
              <AssemblyCompanyAttribute>();
             WriteLine($" Company: {company.Company}");
         }
+
+        [Coder("Edixon van Vliet", "10 October 2020")]
+        static void DoStuff()
+        {
+
+        }
     }
 }
