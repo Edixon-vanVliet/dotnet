@@ -3,6 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>1.3.0</Version>
+    <Company>Edixon van Vliet</Company>
   </PropertyGroup>
 
 </Project>
