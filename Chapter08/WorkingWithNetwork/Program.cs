@@ -25,6 +25,14 @@ namespace WorkingWithNetwork
             WriteLine($"Host: {uri.Host}");
             WriteLine($"Path: {uri.AbsolutePath}");
             WriteLine($"Query: {uri.Query}");
+
+            IPHostEntry entry = Dns.GetHostEntry(uri.Host);
+
+            WriteLine($"{entry.HostName} has the following IP addresses:");
+            foreach (IPAddress address in entry.AddressList)
+            {
+                WriteLine($"  {address}");
+            }
         }
     }
 }
