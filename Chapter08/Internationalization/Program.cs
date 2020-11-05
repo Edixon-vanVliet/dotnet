@@ -38,6 +38,15 @@ namespace Internationalization
                 CultureInfo.CurrentUICulture = cultureInfo;
             }
             WriteLine();
+
+            Write("Enter your name: ");
+            string name = ReadLine();
+
+            Write("Enter your date of birth: ");
+            string dob = ReadLine();
+            
+            Write("Enter your salary: ");
+            string salary = ReadLine();
         }
     }
 }
