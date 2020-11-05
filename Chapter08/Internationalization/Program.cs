@@ -23,6 +23,21 @@ namespace Internationalization
                 localization.Name,
                 localization.DisplayName
             );
+
+            WriteLine("en-US: English (United States)");
+            WriteLine("da-DK: Danish (Denmark)");
+            WriteLine("fr-CA: French (Canada)");
+            
+            Write("Enter an ISO culture code: ");
+            string newCulture = ReadLine();
+
+            if (!string.IsNullOrEmpty(newCulture))
+            {
+                var cultureInfo = new CultureInfo(newCulture);
+                CultureInfo.CurrentCulture = cultureInfo;
+                CultureInfo.CurrentUICulture = cultureInfo;
+            }
+            WriteLine();
         }
     }
 }
