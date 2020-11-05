@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Globalization;
+
+using static System.Console;
 
 namespace Internationalization
 {
